@@ -1,0 +1,126 @@
+Day-3 class(24.10.26)
+
+Data Types:-
+
+what is datatype ?
+Datatype tells python what kind of value variable and  8 type of Datatype:
+////////////////////////////////////////////////////////////////////////////
+-Numeric type : It is used to store numbers.
+
+1)int : it is a store integer value(-1,0,1)
+a = 10
+type(a)
+<class 'int'>
+ex: 
+
+
+
+2)Float: it is a store floating value(2.11)
+b = 2.1
+type(b)
+<class 'float'>
+
+3)complex: it is a store complex value(2+1J), it is general used to ML, Data science, AI
+c = 1+2j
+type(c)
+<class 'complex'>
+
+////////////////////////////////////////////////////////////////////////////////
+-sequence type: 
+
+1)string: it is a collection of character and closed b/w double quote(" ") / single quote('').unmutable & ordered
+s = "codegnan"
+type(s)
+<class 'str'>
+###########################################################################
+
+2)list[]: it is a store collection of different elements such as string, int, complex and other and it is store duplicate values. List is a mutable(mutable is a we can change value/modify value inside the same memory reference).it is ordered
+ex: Instagram, linkedin
+a = [1,1,1,1]
+a
+[1, 1, 1, 1]// It takes duplicate value
+type(a)
+<class 'list'>
+a = [1,2.2,3+2J,"hello"]
+a
+[1, 2.2, (3+2j), 'hello']// different elements.
+type(a)
+<class 'list'>
+id(a)
+1682797358912      //same reference memory---
+a.append("world")
+a
+[1, 2.2, (3+2j), 'hello', 'world']
+id(a)
+1682797358912 //same reference memory---------
+###########################################################################
+
+3)Tuple():it is same as list but we cannot change value which means it is unmutable.it is ordered and it is heterogenous(it is allow wrap all datatypes) 
+ex: outlet, mail.
+
+tuples=(1,2.2,3+5J,"hello world")
+tuples
+(1, 2.2, (3+5j), 'hello world')
+id(tuples)
+1682792380704
+///////////////////////////////////////////////////////////////////////////////////
+
+-Maps 
+
+1)set{}:it is a mutable and heterogenous but it is unordered
+ex: Instagram follower list showing unordered and we can add new follower.
+
+s={34,34,34,123,"hello",23}
+s
+{123, 34, 'hello', 23}
+type(s)
+<class 'set'>
+
+###########################################################################
+
+2)dictionary {key:pairs}: it is mutable and heterogenous.it is store/ wrap key-pairs b/w curves Brackets.it is ordered. To specified any one related key-pairs.
+
+dict = {"name":"giri","course":"cse","phoneNO":123456}
+dict
+{'name': 'giri', 'course': 'cse', 'phoneNO': 123456}
+type(dict)
+<class 'dict'>
+
+///////////////////////////////////////////////////////////////////////////////////
+
+1) Boolean :
+
+s= true                // it is not take at begin lower case letter 
+Traceback (most recent call last):
+  File "<pyshell#28>", line 1, in <module>
+    s= true
+NameError: name 'true' is not defined. Did you mean: 'True'?
+s = flase
+Traceback (most recent call last):
+  File "<pyshell#29>", line 1, in <module>
+    s = flase
+NameError: name 'flase' is not defined
+s = True
+s
+True
+s = Flase
+Traceback (most recent call last):
+  File "<pyshell#32>", line 1, in <module>
+    s = Flase
+NameError: name 'Flase' is not defined. Did you mean: 'False'?
+s = False
+s
+False
+
+2)None:
+
+t = none
+Traceback (most recent call last):
+  File "<pyshell#35>", line 1, in <module>
+    t = none
+NameError: name 'none' is not defined. Did you mean: 'None'?
+t = None
+t
+type(t)
+<class 'NoneType'>
+

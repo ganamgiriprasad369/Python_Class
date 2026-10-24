@@ -1,0 +1,95 @@
+Day-2 Class(16.10.26)
+
+
+what is a Token ?
+Token is a Small Unit.
+Each Unit consider 5 ways:
+-Identifier
+-Operator
+-literal
+-keyword
+-Delimiters (punctuators)
+
+
+for example:
+n = 10;		//Statement1
+if n%2== 0:     // statement2: Any line of code is a statement
+print("even")   //Statement3
+else:		//statement4
+print("odd")	//Statement5
+
+
+This program divided into small pieces, these small pieces are called Tokens.
+n -identifier
+= - operator
+10 -literial 
+if -Keyword
+n - identifier
+% -operator
+2-literial 
+==-operator
+0-literial 
+print()-identifier
+"Even"-literial 
+######################################################
+
+what is Variable?
+
+variable is a hold data/value. it is a casesentise
+Myvar = 10 or myvar = 10 // Upper character or lower Character allowed.
+_myvar = 10   // underscore(_) is allowed but Special Character(@,.,#%*...) are not Allowed.
+if = 5 // keyword are not Allowed.
+5var = 10  // Literal are not Allowed
+
+
+// multiple variable assigned single value
+input :a=b=c=10
+output:
+> a
+10
+> b
+10
+> c
+10
+
+>del a
+>a
+>Traceback (most recent call last):
+  File "<pyshell#11>", line 1, in <module>
+    a
+NameError: name 'a' is not defined
+
+#######################################################
+
+
+what is comment ?
+comment is describe what is the code.
+Two Type of Comments:
+1)Single Comment(#)
+2)Multi Comment('''----''')
+
+
+#######################################################
+Import keyword
+
+Print(keyword.kwlist)//
+
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+
+
+print(len(keyword.kwlist))// 35
+
+
+Category		Keywords
+------------------------------------------------------------
+Conditions-->		if, elif, else
+Loops-->		for, while, break, continue
+Functions-->		def, return, lambda, yield
+Classes-->		class
+Logical-->		and, or, not
+Values-->		True, False, None
+Exceptions-->		try, except, finally, raise, assert
+Imports-->		import, from, as
+Scope-->		global, nonlocal
+Other-->		pass, del, in, is, with, async, await
+
