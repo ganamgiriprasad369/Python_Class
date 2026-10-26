@@ -1,0 +1,21 @@
+Day-1 Class(14.10.26)
+why you choose Python?
+
+1)Python is a open free source- Python is free to download, use, and open source licence(don't want any subscription).
+2)Python is easy to learn and simple syntax, readable syntax similar to English.
+3)python is easy to read to understand because it uses clear syntax and indentation(without use parathesis and semi colon and curve brackets).
+3)Python is Dynamically Typed of language(we don't mention what kind of Datatype, it is automatically understand what datatype based on value.)
+4)Python is high value Language You don't need to manage low-level computer operations, such as memory allocation. It is have Translate(Interpreted) to convert machine understand Language such as (0, 1).
+5)Python is portable because programs can run on different operating systems, such as Windows, Linux, and macOS( we install any kind of OS).
+6)It is used third Party's such as ML, WEB development and backend works and data science.
+7)Large Standard Library: Python provides many built-in modules for working with files, dates, mathematics, and more.
+8)Python Supports Multiple Programming Paradigms such as procedural, object-oriented
+
+what is paradigms?
+different programming language follows different programming styles called paradigms.
+
+what is a procedural programming?
+without user is called procedural programming for example: withdraw money in the ATM Bank, we don't need who put money in bank.
+
+what is oops?
+with User: for example Instagram, we post reel and it is showing who posted and who viewed post.
