@@ -1,0 +1,548 @@
+Day -3 Class(26.10.26)
+
+-Type Conversion: it is convert one datatype to Another Datatype in explicitly. 
+
+1) Int To All DataType: 
+
+a = 10  # INterger Value
+a
+10
+float(a) # convert a float
+10.0
+str(a)	# convert a string
+'10'
+complex(a)# convert a complex
+(10+0j)
+list(a)   # we cannot convert list because list collection element and same as tuple, set and dictionary
+Traceback (most recent call last):
+  File "<pyshell#5>", line 1, in <module>
+    list(a)
+TypeError: 'int' object is not iterable
+tuple(a)
+Traceback (most recent call last):
+  File "<pyshell#6>", line 1, in <module>
+    tuple(a)
+TypeError: 'int' object is not iterable
+set(a)
+Traceback (most recent call last):
+  File "<pyshell#7>", line 1, in <module>
+    set(a)
+TypeError: 'int' object is not iterable
+dict(a)
+Traceback (most recent call last):
+  File "<pyshell#8>", line 1, in <module>
+    dict(a)
+TypeError: 'int' object is not iterable
+bool(a)     # convert boolen
+True
+
+2)Float to All Datatype:
+
+b = 12.0
+b
+12.0
+int(b) // convert into interger
+12
+complex(b)// convert into complex
+(12+0j)
+str(b)
+'12.0'
+list(b)	 // Not convert into list, tuples, set, dict
+Traceback (most recent call last):
+  File "<pyshell#15>", line 1, in <module>
+    list(b)
+TypeError: 'float' object is not iterable
+tuple(b)
+Traceback (most recent call last):
+  File "<pyshell#16>", line 1, in <module>
+    tuple(b)
+TypeError: 'float' object is not iterable
+set(b)
+Traceback (most recent call last):
+  File "<pyshell#17>", line 1, in <module>
+    set(b)
+TypeError: 'float' object is not iterable
+dict(b)
+Traceback (most recent call last):
+  File "<pyshell#18>", line 1, in <module>
+    dict(b)
+TypeError: 'float' object is not iterable
+bool(b)	// we convert into Boolean ( if it there any value, return true or not return false)  
+True
+
+3)Complex to All Datatype:
+
+
+c = 3+5J
+c
+(3+5j)
+int(c)  // not convert interger, string, floating, list, tuples, set, dictionary.
+Traceback (most recent call last):
+  File "<pyshell#22>", line 1, in <module>
+    int(c)
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'complex'
+float(c)
+Traceback (most recent call last):
+  File "<pyshell#23>", line 1, in <module>
+    float(c)
+TypeError: float() argument must be a string or a real number, not 'complex'
+str(c)
+'(3+5j)'
+list(c)
+Traceback (most recent call last):
+  File "<pyshell#25>", line 1, in <module>
+    list(c)
+TypeError: 'complex' object is not iterable
+tuple(c)
+Traceback (most recent call last):
+  File "<pyshell#26>", line 1, in <module>
+    tuple(c)
+TypeError: 'complex' object is not iterable
+set(c)
+Traceback (most recent call last):
+  File "<pyshell#27>", line 1, in <module>
+    set(c)
+TypeError: 'complex' object is not iterable
+dist(c)
+Traceback (most recent call last):
+  File "<pyshell#28>", line 1, in <module>
+    dist(c)
+NameError: name 'dist' is not defined. Did you mean: 'dict'?
+bool(c) // convert into boolean
+True
+
+4)string to all Datatype:
+
+d = 'I am Happy now!'
+d
+'I am Happy now!'
+int(d)  // not convert into int, float, complex
+Traceback (most recent call last):
+  File "<pyshell#32>", line 1, in <module>
+    int(d)
+ValueError: invalid literal for int() with base 10: 'I am Happy now!'
+float(d)
+Traceback (most recent call last):
+  File "<pyshell#33>", line 1, in <module>
+    float(d)
+ValueError: could not convert string to float: 'I am Happy now!'
+complex(d)
+Traceback (most recent call last):
+  File "<pyshell#34>", line 1, in <module>
+    complex(d)
+ValueError: complex() arg is a malformed string
+list(d)						// convert into list
+['I', ' ', 'a', 'm', ' ', 'H', 'a', 'p', 'p', 'y', ' ', 'n', 'o', 'w', '!']
+tuple(d)					// convert into tuples
+('I', ' ', 'a', 'm', ' ', 'H', 'a', 'p', 'p', 'y', ' ', 'n', 'o', 'w', '!')
+set(d)						// convert into set
+{'n', 'p', 'w', ' ', 'o', 'm', '!', 'y', 'a', 'I', 'H'}
+dict(d)						// not convert into dictionery
+Traceback (most recent call last):
+  File "<pyshell#38>", line 1, in <module>
+    dict(d)
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+bool(d)						// convert into boolen
+True
+
+5)list to All datatype:
+
+list = [1,2,3,4,5,6]
+list
+[1, 2, 3, 4, 5, 6]
+int(list)         //Not convert to int, float, complex.
+Traceback (most recent call last):
+  File "<pyshell#2>", line 1, in <module>
+    int(list)
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'list'
+float(list)	 
+Traceback (most recent call last):
+  File "<pyshell#3>", line 1, in <module>
+    float(list)
+TypeError: float() argument must be a string or a real number, not 'list'
+complex(list)
+Traceback (most recent call last):
+  File "<pyshell#4>", line 1, in <module>
+    complex(list)
+TypeError: complex() first argument must be a string or a number, not 'list'
+set(list)		//convert to set, tuple
+{1, 2, 3, 4, 5, 6}
+tuple(list)
+(1, 2, 3, 4, 5, 6)
+dist(list)		//convert to dictionary
+Traceback (most recent call last):
+  File "<pyshell#7>", line 1, in <module>
+    dist(list)
+NameError: name 'dist' is not defined. Did you mean: 'list'?
+dict(list)
+Traceback (most recent call last):
+  File "<pyshell#8>", line 1, in <module>
+    dict(list)
+TypeError: cannot convert dictionary update sequence element #0 to a sequence
+bool(list)		//convert to boolean
+True
+
+6)tuple to All datatype: 
+
+b = (1,2,3,4,5)  // convert to set, Boolean but not convert to int, float, complex, dictionary, list
+b
+(1, 2, 3, 4, 5)
+int(b)
+Traceback (most recent call last):
+  File "<pyshell#12>", line 1, in <module>
+    int(b)
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'tuple'
+float(b)
+Traceback (most recent call last):
+  File "<pyshell#13>", line 1, in <module>
+    float(b)
+TypeError: float() argument must be a string or a real number, not 'tuple'
+complex(b)
+Traceback (most recent call last):
+  File "<pyshell#14>", line 1, in <module>
+    complex(b)
+TypeError: complex() first argument must be a string or a number, not 'tuple'
+list(b)
+Traceback (most recent call last):
+  File "<pyshell#15>", line 1, in <module>
+    list(b)
+TypeError: 'list' object is not callable
+set(b)
+{1, 2, 3, 4, 5}
+list(b)
+Traceback (most recent call last):
+  File "<pyshell#17>", line 1, in <module>
+    list(b)
+TypeError: 'list' object is not callable
+dict(b)
+Traceback (most recent call last):
+  File "<pyshell#18>", line 1, in <module>
+    dict(b)
+TypeError: cannot convert dictionary update sequence element #0 to a sequence
+bool(b)
+True
+
+7)set to All Datatype:
+
+set = {1,2,3,4,5}  // convert(tuple, Boolean) & not convert(int, float, complex, list, dictionary)
+set
+{1, 2, 3, 4, 5}
+int(set)
+Traceback (most recent call last):
+  File "<pyshell#22>", line 1, in <module>
+    int(set)
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'set'
+float(set)
+Traceback (most recent call last):
+  File "<pyshell#23>", line 1, in <module>
+    float(set)
+TypeError: float() argument must be a string or a real number, not 'set'
+complex(set)
+Traceback (most recent call last):
+  File "<pyshell#24>", line 1, in <module>
+    complex(set)
+TypeError: complex() first argument must be a string or a number, not 'set'
+list(set)
+Traceback (most recent call last):
+  File "<pyshell#25>", line 1, in <module>
+    list(set)
+TypeError: 'list' object is not callable
+tuple(set)
+(1, 2, 3, 4, 5)
+dict(set)
+Traceback (most recent call last):
+  File "<pyshell#27>", line 1, in <module>
+    dict(set)
+TypeError: cannot convert dictionary update sequence element #0 to a sequence
+bool(set)
+True
+
+8)dictionary to All Datatype:
+
+dict = {1:2, 2:4, 3:6, 4:8}// convert type(tuple, Boolean) & Not convert type(int, Float, Complex, list, set)
+dict
+{1: 2, 2: 4, 3: 6, 4: 8}
+int(dict)
+Traceback (most recent call last):
+  File "<pyshell#31>", line 1, in <module>
+    int(dict)
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'dict'
+float(dict)
+Traceback (most recent call last):
+  File "<pyshell#32>", line 1, in <module>
+    float(dict)
+TypeError: float() argument must be a string or a real number, not 'dict'
+complex(dict)
+Traceback (most recent call last):
+  File "<pyshell#33>", line 1, in <module>
+    complex(dict)
+TypeError: complex() first argument must be a string or a number, not 'dict'
+list(dict)
+Traceback (most recent call last):
+  File "<pyshell#34>", line 1, in <module>
+    list(dict)
+TypeError: 'list' object is not callable
+tuple(dict)
+(1, 2, 3, 4)
+set(dict)
+Traceback (most recent call last):
+  File "<pyshell#36>", line 1, in <module>
+    set(dict)
+TypeError: 'set' object is not callable
+bool(dict)
+True
+
+
+9) Boolean to All Datatype:
+
+boolean = true  // convert Type(int, Float, Complex) & Not Convert Type(List, Tuple, Set, Dictionary)
+Traceback (most recent call last):
+  File "<pyshell#38>", line 1, in <module>
+    boolean = true
+NameError: name 'true' is not defined. Did you mean: 'True'?
+boolean = True
+boolean
+True
+int(boolean)
+1
+float(boolean)
+1.0
+complex(boolean)
+(1+0j)
+list(boolean)
+Traceback (most recent call last):
+  File "<pyshell#44>", line 1, in <module>
+    list(boolean)
+TypeError: 'list' object is not callable
+tuple(boolean)
+Traceback (most recent call last):
+  File "<pyshell#45>", line 1, in <module>
+    tuple(boolean)
+TypeError: 'bool' object is not iterable
+set(boolean)
+Traceback (most recent call last):
+  File "<pyshell#46>", line 1, in <module>
+    set(boolean)
+TypeError: 'set' object is not callable
+dict(boolean)
+Traceback (most recent call last):
+  File "<pyshell#47>", line 1, in <module>
+    dict(boolean)
+TypeError: 'dict' object is not callable
+
+
+NOTED Point: 
+int ----(convert)-------->float, complex, string, Boolean.
+Float---(convert)-------->int, complex, string, Boolean.
+Complex-(convert)-------->Not Convert any Type.
+string--(convert)-------->wherever defined numeric in the string that will be convert into (int, Float, complex) otherwise not convert & list, set, Tuple, Boolean.
+list----(convert)-------->string, tuple, set, Boolean.
+Tuple---(convert)-------->string, Boolean.
+Set-----(convert)-------->String, Tuple, Boolean.
+Dictionary-(convert)-------->Not Convert any type expect tuple, boolean.
+Boolean-(convert)-------->int, Float, Complex.
+################################################################################################################################
+
+Operators:
+
+1) Arithmetic operator:
+
+a = 10
+b = 20
+
+1) addition 
+a+b
+30
+
+2)subtraction
+a-b
+-10
+b-a
+10
+
+3)multiplication
+b*a
+200
+
+4)division
+b/a
+2.0
+
+5)Float Division
+b//a
+2
+
+6)Modulus
+b%a
+0
+
+7)exponential
+b**a
+10240000000000
+
+
+
+2) comparison operator:
+
+a = 10
+b = 20
+
+-greater than:
+a>b
+False
+
+-less than
+a<b
+True
+
+-greater than or equal
+a>=b
+False
+
+-less than or equal
+a<=b
+True
+
+-equal 
+a==b
+False
+
+-Not Equal
+a!=b
+True
+
+
+3) assignment Operator:
+
+a = 20
+b = 10
+a = a + 10
+a
+30
+a = 20
+a
+20
+a
+20
+a = a +10 ( both side have same variable.so, we simple do a +=10)
+a
+30
+a += 10 // increment
+a
+40
+a -=10 // decrement
+a
+30
+a *=10 
+a
+300
+a %=10
+a
+0
+a /=10
+a
+0.0
+a //=10
+a
+0.0
+
+
+4)Logical operator:
+
+a = 20
+b = 10
+a b
+SyntaxError: invalid syntax
+a
+20
+b
+10
+1)AND : if both true, It return true
+a%2 == 0 and a>10
+True
+b%2 == 0 and b>10
+False
+2)OR : if Any one true, It return true.
+a%2 == 0 or a>10
+True
+b%2 == 0 or b>10
+True
+
+not b%2 == 0 and b>10
+False
+
+3)Not: inverted of condition.
+not (b%2 == 0 and b>10)
+True
+
+
+
+5)membership operator :find whether it there or not.
+
+list = ["master",1,2,3,"shadow"]
+list
+['master', 1, 2, 3, 'shadow']
+
+1) in : check whether something there or not.
+
+"master" in list
+True
+5 in list
+False
+
+
+2) not in: inverted
+
+5 not in list
+True
+
+Noted : it is worked on string, list, tuple, set, dictionary but dictionary get only key, not pairs.
+
+ex:
+dict = {1:2,2:4,3:6,4:8}
+dict
+{1: 2, 2: 4, 3: 6, 4: 8}
+1 in dict
+True
+6 in dict
+False
+
+
+6)Identity operator: To check / compare two list memory reference.
+
+
+ n = [1,2,3,4,5]
+m = [1,2,3,4,5]
+n == m
+True
+id(n)
+2026371005440
+id(m)
+2026371006144
+k = n
+id(k)
+2026371005440
+n is m
+False
+n not is m
+SyntaxError: invalid syntax
+n is not m
+True
+k is n
+True
+
+ 1)IS: to compare memory reference.
+	
+ n is m
+False
+
+k is n
+True
+
+ 2)not Is : inverted
+
+
+n not is m
+SyntaxError: invalid syntax
+n is not m
+True
