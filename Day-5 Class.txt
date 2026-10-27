@@ -1,0 +1,345 @@
+Day-5 Class(27.10.26)- continuous operator
+
+
+
+7) Bitwise Operator: (&, |, ^, ~, >>, <<)
+
+
+1)AND bitwise Operator(&): Both are 1's, It returns 1 otherwise return '0'.
+2->010
+5->101
+--------
+   000->0
+>2&5
+0 
+
+2)OR Bitwise Operator(|):if any one of 1's. it retrun 1 otherwsie both are zero return 0.
+
+2->010
+5->101
+--------
+   111->7
+2|5
+7
+
+3)exclusive OR Bitwise Operator(^): The both are different, it is return '1'. otherwise '0'(Both are same).
+
+2->010
+5->101
+--------
+   111->7
+
+2^5
+7
+
+4) Not bitwise operator(~): invert
+
+2~5
+SyntaxError: invalid syntax
+2~
+SyntaxError: invalid syntax
+~2
+-3
+
+5)Right shift operator(>>): add zero right shift.
+
+2->0010
+add(2 zero right shift)
+add 2->0000->0
+
+2>>2
+0
+
+
+6)left shift operator(<<): add zero left shift.
+
+2->0010
+add(2 zero left shift)
+add 2->1000->8
+
+2<<2
+8
+
+
+
+
+##################################################################################
+
+1)prompt :To get the data from user.
+
+str -> input()
+int ->int(input())
+float->float(input())
+
+-->String prompt:
+a = input("enter your name: ")
+enter your name: giri prasad
+a
+'giri prasad'
+
+--->Int prompt:
+b = int(input("enter Your age:"))
+enter Your age:25
+b
+25
+
+--->float prompt:
+c = float(input("enter your basic salary:"))
+enter your basic salary:26000.23
+c
+26000.23
+
+-------------->list:
+
+error:
+
+k = list(int(list(input("enter the number"))))
+         
+enter the number12164664646
+Traceback (most recent call last):
+  File "<pyshell#26>", line 1, in <module>
+    k = list(int(list(input("enter the number"))))
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'list'
+
+// string 
+k = input("enter the numbers:")
+         
+enter the numbers:12 2635 5689
+k
+         
+'12 2635 5689'
+
+---->list of str:
+// string to list
+k = input(" enter the numbers:").split()
+         
+ enter the numbers:12 2635 5689
+k
+         
+['12', '2635', '5689']
+//-----------------------------------------------------------------------------------------
+'''
+map is used to convert one datatype to Another datatype, It is list, tuple, set 
+'''
+//-----------------------------------------------------------------------------------------
+
+k = map(int, input("enter the numbers:").split())
+         
+enter the numbers:12 2635 5689
+k
+         
+<map object at 0x000001E1B3990A90>
+
+---->list of int:
+k = list(map(int, input("enter the numbers:").split()))
+         
+enter the numbers:12 2635 5689
+k
+         
+[12, 2635, 5689]
+
+
+---->list of float:
+k = list(map(float, input("enter the numbers:").split()))
+         
+enter the numbers:12 2635 5689
+k
+         
+[12.0, 2635.0, 5689.0]
+
+-------------------------------------> tuple of (str, int, float)
+-->str:
+k = tuple(input("enter the numbers:").split()))
+         
+enter the numbers:12 2635 5689
+k
+         
+('12', '2635', '5689')
+
+--->int:
+k = tuple(map(int, input("enter the numbers:").split()))
+         
+enter the numbers:12 2635 5689
+k
+         
+(12, 2635, 5689)
+
+-->float:
+k = tuple(map(float, input("enter the numbers:").split()))
+         
+enter the numbers:12 2635 5689
+k
+         
+(12.0, 2635.0, 5689.0)
+
+
+
+--------------------------------------->set of (str, int, Float):
+--->string:
+k = set(input("enter the numbers:").split())
+enter the numbers:12 2635 5689
+k
+{'12', '5689', '2635'}
+
+
+--->int:
+k = set(map(int, input("enter the numbers:").split()))
+enter the numbers:112 2653 5689
+k
+{112, 5689, 2653}
+
+--->float:
+k = set(map(float, input("enter the numbers:").split()))
+enter the numbers:12 2565 5689
+k
+{5689.0, 12.0, 2565.0}
+
+
+
+##############################################################################
+
+>>>>Assign multiple input : 
+
+ERROR:
+
+email, address = input().split()
+ganamgiriprasadyuqtdu@gmail.com
+Traceback (most recent call last):
+  File "<pyshell#53>", line 1, in <module>
+    email, address = input().split()
+ValueError: not enough values to unpack (expected 2, got 1)
+
+
+ex: 
+>email, address = input().split()
+>gabnnmdgjagdj@gmail  ydsajha
+email
+'gabnnmdgjagdj@gmail'
+address
+'ydsajha'
+
+
+
+>>>>>>eval(input()): what type of data type enter that will return using eval method.
+
+-->int
+a = eval(input())
+123
+a
+123
+
+--->float
+a = eval(input())
+12.06
+a
+12.06
+
+--->string
+a = eval(input())
+"hello"
+a
+'hello'
+
+---->error:
+a = eval(input())
+123 56 859 23
+Traceback (most recent call last):
+  File "<pyshell#63>", line 1, in <module>
+    a = eval(input())
+  File "<string>", line 1
+    123 56 859 23
+        ^^
+SyntaxError: invalid syntax
+
+--->list
+a = eval(input())
+[123, 56, 32]
+a
+
+---->tuple
+[123, 56, 32]
+a = eval(input())
+(123,56,32)
+a
+(123, 56, 32)
+
+---->set
+a = eval(input())
+{123,56, 32}
+a
+{56, 32, 123}
+
+---->dict
+a = eval(input())
+{1:2,2:4,3:6}
+a
+{1: 2, 2: 4, 3: 6}
+
+--->boolean
+a = eval(input())
+true
+Traceback (most recent call last):
+  File "<pyshell#72>", line 1, in <module>
+    a = eval(input())
+  File "<string>", line 1, in <module>
+NameError: name 'true' is not defined. Did you mean: 'True'?
+a = eval(input())
+True
+a
+True
+
+
+#######################################################################################################
+
+print - different ways to print using formats, f-string, characters.
+
+1)common method:
+a = 10
+b = 10.02
+c = "codegnan"
+a
+10
+b
+10.02
+c
+'codegnan'
+
+2)print() method:
+print(a, b, c)
+10 10.02 codegnan
+
+3)normal method:
+print("a=",a,"b=",b,"c=",c)
+a= 10 b= 10.02 c= codegnan // we get space b/w = and value.To remove this using separator method 
+
+4)separator method:
+print("a=",a,"b=",b,"c=",c, sep="")
+a=10b=10.02c=codegnan
+print("a=",a,"b=",b,"c=",c, sep="_")
+a=_10_b=_10.02_c=_codegnan
+
+5)end method: to return end line.
+print("a=",a,"b=",b,"c=",c, sep="_" end="@")
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+print("a=",a,"b=",b,"c=",c, sep="_", end="@")
+a=_10_b=_10.02_c=_codegnan@
+
+
+6)f-string method:     ///    best method ///
+print(f'a={a}, b={b}, c={c}')
+a=10, b=10.02, c=codegnan
+
+
+7)format method
+print('a={a}, b={b}, c={c}'.format(a,b,c))
+Traceback (most recent call last):
+  File "<pyshell#89>", line 1, in <module>
+    print('a={a}, b={b}, c={c}'.format(a,b,c))
+KeyError: 'a'
+print('a={}, b={}, c={}'.format(a,b,c))
+a=10, b=10.02, c=codegnan
+
+8)Old method:
+print('a=%d, b=%f, c=%s'%(a,b,c))
+a=10, b=10.020000, c=codegnan
