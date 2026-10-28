@@ -1,0 +1,521 @@
+Day - 6 Class (28.10.26)
+
+------------------------------------------------------------------------------------------------
+1)STRINGS: It is collection of character, it is umutable & return sequence ordered.
+------------------------------------------------------------------------------------------------
+
+Operation: there are five operation
+
+s = 'Python'
+s
+'Python'
+k = 'programming'
+k
+
+1)concantation(+): combined two or more strings.
+
+ s+k
+'Pythonprogramming'
+
+
+
+
+2)Repeation(*):repeating the one string.
+
+ s*3
+'PythonPythonPython'
+
+
+
+
+3)indexing: To access particular character from string by use Index(positive index or Negative Index).
+  012345
+  ||||||
+  Python
+  ||||||
+  654321(-negative)
+
+Syntax: k[index]
+
+k = 'python programming is programming language'
+k
+'python programming is programming language'
+k[9]
+'o'
+k[-9]
+' '
+k[-8]
+'l'
+k[-1]
+'e'
+k[1]
+'y'
+
+
+
+
+4)slicing:to return particular element give range from to the string.
+
+
+Syntax: 
+k[start:end+1:step]
+
+start- starting point of character from string.
+end+1 - end point of character from string.
+step - how gap b/w character to return new string.
+
+k = 'python programming is programming language'
+k
+'python programming is programming language'
+
+k[0:6:1]
+'python'
+
+k[0:-5:1]
+'python programming is programming lan'
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+k[0:-5:-1]
+''
+k[0:6:-1]
+''
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+k[-5::-1]
+'gnal gnimmargorp si gnimmargorp nohtyp'
+
+k[::-1]
+'egaugnal gnimmargorp si gnimmargorp nohtyp'
+
+k[0:6:1]
+'python'
+
+k[0:6:-1]
+''
+
+k[-35::-1]
+'p nohtyp'
+
+
+
+5)membership(in , in Not):It is Check whether a character inside string. when found to return True otherwise False.
+
+Syntax: Value in String
+	Value not in string
+
+
+Example:(filpkart)->I'm searching the product item inside the filpKart.
+
+
+filpkart = 'bags belts shoes toys'
+belts in filpkart
+
+
+'belts' in filpkart
+True
+
+
+'gloves' in filpkart
+False
+'gloves' not in filpkart
+True
+
+########################################################################################
+
+Built-in functions: len(), ord(), chr(), min(), max(), sorted()
+Basic inbuilt methods:
+
+1) length(len): To return length of  character in string including spaces & punctuation.
+
+syntax: len(string)
+
+ex: length of password.
+
+k
+'python programming is programming language'
+
+len(k)
+42
+
+
+2)order(ord): To convert character or special character into ASCII characters(Unicode value).
+
+Syntax: ord(character)
+
+
+
+
+
+3)character(chr):to convert ASCII characters value into character or special character.
+
+Syntax; char(ASCILL value).
+
+chr(10)
+'\n'
+
+chr(99)
+'c'
+
+
+4)min():To find the minimum character in the string. 
+
+c
+'shadowmaster'
+
+min(c)
+'a'
+
+
+
+
+5)max():To find the maximum character in the string.
+
+c
+'shadowmaster'
+
+max(a)
+'w'
+
+
+
+
+6)sorted(): It return a  list of character in ascending order.
+
+
+Syntax: sorted(iterable)
+
+ex: shopping application ->we return a list of product items.
+
+c
+'shadowmaster'
+
+sorted(c)
+['a', 'a', 'd', 'e', 'h', 'm', 'o', 'r', 's', 's', 't', 'w']
+
+
+
+
+########################################################################################
+String methods: upper(), lower(), find(), replace(), etc.
+
+Case-conversion methods/Case-sensation Methods:
+
+
+1)Uppercase():Convert all Character into uppercase letter.
+
+Syntax: string.upper()
+
+ex: display coupon code.
+
+c
+'shadowmaster'
+c.upper()
+'SHADOWMASTER'
+
+
+
+2)Lowercase():convert all character into lowercase letter.
+
+Syntax: string.lower()
+
+c.lower()
+'shadowmaster'
+
+ex; some others enter email capital letter that convert lower letter.
+
+
+3)swapcase():convert entire lowercase string into Upper case or convert entire Upper case string into lowercase letter.
+
+Syntax: string.swapcase()
+
+
+a = 'MASTER Shadow'
+a.swapcase()
+'master sHADOW'
+
+
+
+
+4)Title():convert word first letter from string into Uppercase letter
+
+
+Syntax: string.title()
+
+ex; some application mentioned name: you enter the small letter that will change into First character changed uppercase.
+
+
+a = 'giri prasad'
+a.title()
+'Giri Prasad'
+
+
+
+5)Capitalize():convert string first letter into uppercase letter.
+
+Converts the first character to uppercase and the remaining characters to lowercase.
+
+Syntax: string.capitalize() 
+
+
+ex: description 
+
+a = 'iam the webdevwlopwr  khfkjshfkshfkhs'
+a.capitalize()
+'Iam the webdevwlopwr  khfkjshfkshfkhs'
+
+
+
+6)Casefold():convert stroke uppercase letter Or character  into  stroke lowercase letter.
+
+
+
+
+
+
+#####################################################################
+
+
+Formatting Method: Align Text to string Specific width
+
+
+
+1)center():Center alignment
+places a string  in the center, to specified width
+
+
+Syntax: string.center(width, fillchar) --fillchar(optional)
+
+
+
+
+2)ljust():Left alignment
+
+Places the string on the left and fills the remaining space on the right.
+
+Syntax: string.ljust(width, fillchar)
+
+
+
+
+3)rjust():Right alignment
+
+Places the string on the right and fills the remaining space on the left.
+
+Syntax: string.rjust(width, fillchar)
+
+
+
+
+
+
+
+
+4)zfill():Add zeros to the left
+
+Adds zeros to the beginning of a string until it reaches the specified width.
+
+Syntax: string.zfill(width)
+
+
+
+f.ljust(10, "-")
+'banana----'
+
+f.rjust(10, "_")
+'____banana'
+
+b = '125'
+b.zfill(5)
+'00125'
+
+
+
+
+
+###########################################################################################
+
+Finding Method: These Method search for text and return index.
+
+
+
+1)find: it is find the first occurs character from string / Find the first occurrence.
+
+Returns -1 if it is not found.
+
+Syntax: string.find(substring, start, end)
+
+The start and end arguments are optional.
+
+text = 'the master bruce wayne is a Batman. Batman is a not bruce wayne.'
+text
+'the master bruce wayne is a Batman. Batman is a not bruce wayne.'
+
+text.find('b')
+11
+text.find('bruce')
+11
+text.find('in')
+-1
+
+
+
+
+2)rfind: It is find the last occurs character from the string
+
+Syntax: string.rfind(substring, start, end)
+
+
+text.rfind('b')
+52
+
+
+3)index: it is find and return index number in the first occurs character from string.
+
+Syntax: string.index(substring, start, end)
+
+
+text.index('b')
+11
+text.index('z') // not found substring
+Traceback (most recent call last):
+  File "<pyshell#93>", line 1, in <module>
+    text.index('z')
+ValueError: substring not found
+text.index('in')
+Traceback (most recent call last):
+  File "<pyshell#94>", line 1, in <module>
+    text.index('in')
+ValueError: substring not found
+
+
+
+4)rindex: it is find and return index number in the last occurs character from string.
+
+Syntax: string.rindex(substring, start, end)
+
+
+text.rindex('b')
+52
+
+
+
+
+5)count: it is counting number of time repeating particular character/substring from string.
+
+Syntax: string.count(substring, start, end)
+
+
+text.count('b')
+2
+text.count('Batman')
+2
+text.count('the')
+1
+
+
+
+
+#####################################################################################################
+
+Strip Method: 
+Strip methods remove specified characters from the beginning, end, or both ends of a string. remove specified character is a whitespace such as spaces, Tabs, and newlines.
+
+1)strip:Remove from both ends
+
+
+Syntax: string.strip(chars)
+
+The chars argument is optional.
+
+
+ex; To removing the space entered username from registered form.
+
+text='  hello  '
+
+text.strip()
+'hello'
+
+I get this type:
+text.strip('l')
+'  hello  '
+text1 = '   hello world      '
+text1.strip('world')
+'   hello world      '
+
+But I solved this:
+text.strip().strip('l')
+'hello'
+text.strip().strip('o')
+'hell'
+text1.strip().strip('world')
+'hello '
+text2 ='world hello world'
+text2.strip('world')
+' hello '
+
+
+2)lstrip:Remove from the left
+
+Syntax: string.lstrip(chars)
+
+text.lstrip()
+'hello  '
+
+
+3)rstrip:Remove from the right
+
+Syntax: string.rstrip(chars)
+
+text.rstrip()
+'  hello'
+
+
+
+
+
+######################################################################################
+
+Replace Method:
+
+1)Replace(): Replaces occurrences of one substring with another substring.
+
+
+Syntax: string.replace(old, new, count)
+
+old: text to find
+
+new: replacement text
+
+count: optional maximum number of replacements
+
+
+ex: Updating product descriptions, replacing words in text, or changing formatting in data.
+
+
+____________________________________________________________________________________________________________________________________
+Note : we replace only one character or substring. this disadvantage replace that why new replace method use 'translate & maketrans'
+-------------------------------------------------------------------------------------------------------------------------------------
+
+2)maketrans(): Create a translation table
+
+
+maketrans() creates a mapping that tells Python which characters to replace when translate() is called.
+
+
+Syntax: str.maketrans(old_chars, new_chars)
+
+text1.maketrans('aeiou','12345')
+{97: 49, 101: 50, 105: 51, 111: 52, 117: 53}// ASCLI character(Unicode value).
+
+
+
+
+3)translate(s.maketrans()): Apply a translation table
+
+
+Uses a translation table created by maketrans() to replace or remove characters.
+
+Syntax: string.translate(table)
+
+
+text1.translate(text1.maketrans('aeiou','12345'))
+'j1ckj4n2s'
